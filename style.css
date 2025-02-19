@@ -1,0 +1,157 @@
+/* CSS Style */
+
+/* Main */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  background-image: url('Visual/background.jpg');
+}
+
+span, a, p, h1, h2 { 
+  color: white;
+  font-family: Helvetica, sans-serif; 
+}
+
+button { font-family: Helvetica, sans-serif; }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.out-shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(255, 255, 255, 0.07) inset;
+}
+
+.in-shadow {
+  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(20, 20, 20, 1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(255, 255, 255, 0.07) inset;
+  padding: 10px 20px;
+  color: white;
+  height: 40px;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pages > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.pages > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 2px;
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.nav-icon {
+  width:20px;
+  height:20px;
+  padding:5px;
+}
+
+/* Menu */
+.menu-title {
+  text-align: center;
+}
+
+/* Main Page */
+.section {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+  justify-content: space-between;  /* Push text & image apart */
+  height: 414px;
+  padding: 20px;
+}
+
+/* Text container */
+.text {
+    margin-left: 200px;
+}
+
+/* Headings */
+.text h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.text h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.text p {
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+/* Image */
+.section img {
+    height: 200px;
+    width: 200px;
+    margin-right: 200px; /* Adjust spacing */
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  background-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text {
+        margin-left: 0;
+    }
+
+    .section img {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+}
