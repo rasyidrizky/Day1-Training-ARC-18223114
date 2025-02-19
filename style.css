@@ -1,5 +1,4 @@
 /* CSS Style */
-
 /* Main */
 html {
   scroll-behavior: smooth;
@@ -21,14 +20,6 @@ button { font-family: Helvetica, sans-serif; }
   text-shadow: 2px 2px 4px #000000;
 }
 
-.out-shadow {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(255, 255, 255, 0.07) inset;
-}
-
-.in-shadow {
-  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.3) inset;
-}
-
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -45,12 +36,6 @@ button { font-family: Helvetica, sans-serif; }
   height: 40px;
   gap: 20px;
   z-index: 1000;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .pages {
@@ -90,6 +75,12 @@ button { font-family: Helvetica, sans-serif; }
 }
 
 /* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .menu-title {
   text-align: center;
 }
@@ -103,12 +94,12 @@ button { font-family: Helvetica, sans-serif; }
   padding: 20px;
 }
 
-/* Text container */
+/* -> Text container */
 .text {
     margin-left: 200px;
 }
 
-/* Headings */
+/* -> Headings */
 .text h2 {
     font-size: 30px;
     margin-bottom: 0;
@@ -124,6 +115,7 @@ button { font-family: Helvetica, sans-serif; }
   margin-top: -30px;
 }
 
+/* -> Page Title and Description */
 .desc-h1 {
   padding-top:50px;
   font-size: 30px;
@@ -138,6 +130,7 @@ button { font-family: Helvetica, sans-serif; }
   margin-right:200px;
 }
 
+/* -> About Page */
 .about-section {
   display: flex;
   align-items: flex-start;
@@ -168,6 +161,7 @@ button { font-family: Helvetica, sans-serif; }
   margin-left: -100px;
 }
 
+/* -> Profile Page */
 .pro-section {
   display: flex;
   align-items: flex-start;
@@ -200,6 +194,7 @@ button { font-family: Helvetica, sans-serif; }
   border-radius: 10px;
 }
 
+/* -> Contact Page */
 .contact-section {
   text-align: center;
   color: white;
